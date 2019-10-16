@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+  
+</head>
+<body>
+<table style="width:100%">
+ <col>
+  <col>
+  <colgroup span="2"></colgroup>
+  <thead>
+    <tr>
+      <th scope="col"><img src="vishnu.png"height="100"width="100"></th>
+     <th colspan="4" scope="colgroup"><h1><center>Vishnu Online Book Shop</h1></th>
+    </tr>
+  </thead>
+<tr>
+        <th><a href="home.html">Home</a></th> 
+        <th><a href="new4.html">Login</a></th> 
+    <th><a href="registration.html">Registration</a></th>
+    <th><a href="catalogue.html">Catalogue</a></th>
+    <th><a href="cart.html">Cart</a></th> 
+  </tr>
+<div class="title">
+
+</div>
+<hr>
+</table>
+<header> 
+<div class="main">
+<ul>
+<li><a href="">CSE</a></li>
+<li><a href="#">ECE</a></li>
+<li><a href="#">EEE</a></li>
+<li><a href="#">IT</a></li>
+</ul>
+</div>
+</header>
+<form name="loginForm" method="post" action="login.php">
+<table width="20%"  align="center">
+
+<tr>
+<td colspan=2><center></td>
+</tr>
+<tr>
+<td>Username:</td>
+<td><input type="text" size=25 name="userid"></td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td><input type="Password" size=25 name="pwd"></td>
+</tr>
+
+<tr>
+<td ><input type="Reset"></td>
+<td><input type="submit" onclick="return check(this.form)" value="Login"></td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>
