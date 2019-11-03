@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+	<!-- bean definitions here -->
+	<bean id="details" class="assignments.Question">
+		<property name="questionId" value="1"></property>
+		<property name="question" value="what are your favourate charecters in mortal komabat"></property>
+		<property name="answers" value="jax"></property>
+		<property name="a1"><list><value>Scorpion</value></list></property>
+		<property name="a2"><set><value>Subzero</value></set></property>
+		<property name="a3"><map><entry key="001" value="Kabal" /></map></property>
+		</bean>
+		<bean id="details1" class="assignments.Question">
+		<property name="questionId" value="2"></property>
+		<property name="question" value="what are martial artist charectors"></property>
+		<property name="answers" value="kung lao"></property>
+		<property name="a1"><list><value>lui kang</value></list></property>
+		<property name="a2"><set><value>kitana</value></set></property>
+		<property name="a3"><map><entry key="002" value="noob saibot" /></map></property>
+		</bean>
+</beans>
+    
