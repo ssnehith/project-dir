@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+	<!-- bean definitions here -->
+	<bean id="details" class="assignments.Customer">
+		<property name="customerId" value="1"></property>
+		<property name="customerName" value="Raju"></property>
+		<property name="customerContact" value="9900765"></property>
+		<property name="CustomerAddress" ref = "address1"/>
+	
+	</bean>
+
+	<bean id="details1" class="assignments.Customer">
+	<constructor-arg value = "2"> </constructor-arg>
+	<constructor-arg value = "Rakesh"> </constructor-arg>
+	<constructor-arg value = "881237"> </constructor-arg>
+	<constructor-arg ref = "address2"> </constructor-arg>
+	</bean>
+
+	<bean id="address1" class="assignments.Address">
+		<property name="street" value = "MgRoad"/>
+		<property name="city" value = "Delhi"/>
+		<property name="state" value = "NewDelhi"/>
+		<property name="zip" value = "001"/>
+		<property name="country" value = "India"/>
+	</bean>
+	
+	<bean id="address2" class="assignments.Address">
+		<property name="street" value = "MgRoad"/>
+		<property name="city" value = "Bangalore"/>
+		<property name="state" value = "Karnataka"/>
+		<property name="zip" value = "006"/>
+		<property name="country" value = "India"/>
+	</bean>
+	
+	
+</beans>
+    
